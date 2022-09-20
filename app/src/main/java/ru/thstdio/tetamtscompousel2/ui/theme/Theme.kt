@@ -7,13 +7,13 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 
 private val DarkColorPalette = darkColors(
-    primary = Purple200,
+    primary = MtsDefault,
     primaryVariant = Purple700,
     secondary = Teal200
 )
 
 private val LightColorPalette = lightColors(
-    primary = Purple500,
+    primary = MtsDefault,
     primaryVariant = Purple700,
     secondary = Teal200
 
@@ -28,9 +28,9 @@ private val LightColorPalette = lightColors(
 )
 
 @Composable
-fun TetaMtsCompouseL2Theme(
+fun MtsTetaCompouseLesson2Theme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    content: @Composable () -> Unit
+    content: @Composable() () -> Unit
 ) {
     val colors = if (darkTheme) {
         DarkColorPalette
